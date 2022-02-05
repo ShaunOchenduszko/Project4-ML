@@ -7,14 +7,28 @@
 
 
 **ETL Process**
-- We began with a data set of over 100,000 games, but after some investigation, we shrunk our data set to about 27,000 games. In order to feed our data into a machine learning model, our data set needed extensive cleaning, including:
--- Merging Steam and Rawg data sets
--- Dropping unnecessary columns
--- Removing null values
--- Calculating the total positive reviews for each game to find total positive reviews as a % to use as our target.
--- Formatting release date column to proper datetime, and then split by release month.
--- Declaring lists for each game to allow for each game to store its own unique data.
--- Counting and sorting game tags to allow us to ascertain the 25 most popular tags to use as a feature.
+
+We began with a data set of over 100,000 games, but after some investigation, we shrunk our data set to about 27,000 games. In order to feed our data into a machine learning model, our data set needed extensive cleaning, including:
+- Merging Steam and Rawg data sets
+- Dropping unnecessary columns
+- Removing null values
+- Calculating the total positive reviews for each game to find total positive reviews as a % to use as our target.
+- Formatting release date column to proper datetime, and then split by release month.
+- Declaring lists for each game to allow for each game to store its own unique data.
+- Counting and sorting game tags to allow us to ascertain the 25 most popular tags to use as a feature.
+
+**Super Awesome Color Feature**
+
+Each API call from Rawg.io had a link to the respective games cover art 
+
+Used a K-Means Classifier on each preprocessed image to cluster the dominant colors, then picked 5 dominant colors, which were returned as centroids.
+Two approaches were taken:
+1) Converted Centroids to color name such as “Green”, “Blue”, “Yellow/Brown” (5 columns)
+2) Used Actual RGB Values (15 columns)
+
+Each was then added to the main data set as features, 1 categorical approach, and one numerical.
+
+This was very computationally intensive, taking around 9 hours to download, process, find centroids, and delete from local computer.
 
 
 ## Directory Structure
