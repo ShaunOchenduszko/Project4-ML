@@ -4,18 +4,18 @@
 
 **Project4-ML**
 
-**Home**
+***Home***
 - .gitignore
 - README.md
 
-**Code**
+***Code***
  - ETL.ipynb
  - games_ML.ipynb
  - Color_Extraction.ipynb
 - Color_Extraction_Sample.ipynb
 - sample_test.ipynb
 
-**Resources**
+***Resources***
 - Final_Data_w_Colors.csv
 - top_1000_from_boris_data.csv
 
