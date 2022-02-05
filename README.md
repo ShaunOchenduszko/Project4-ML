@@ -4,6 +4,8 @@
 - The goal of this project is to use data pulled from multiple sources in order to help us predict what factors are most influential to if a player feels positively or negatively about a game that they have purchased.
 - The raw data was pulled using APIs from rawg.io and SteamSpy.
 - Data evaluated includes genre, publisher, release date, box art colors, critical reception, where the game was available for purchase, copies sold, how many users finished the game, gaming platform, initial price, ESRB rating, and user playtime.
+
+
 **ETL Process**
 - We began with a data set of over 100,000 games, but after some investigation, we shrunk our data set to about 27,000 games. In order to feed our data into a machine learning model, our data set needed extensive cleaning, including:
 -- Merging Steam and Rawg data sets
