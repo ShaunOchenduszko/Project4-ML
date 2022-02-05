@@ -2,7 +2,7 @@
 
 ## Directory Structure
 
-Project4-ML /n
+Project4-ML \n
 Home
   .gitignore
   README.md
